@@ -16,7 +16,7 @@ class TogglePicker extends Component {
   )
 
   renderIos = () => (
-    <ToggleBox label={this.props.label} value={this.props.value} style={StyleSheet.flatten([styles.toggleBox, this.props.iosBoxStyle])}>
+    <ToggleBox ref="toggleBox" label={this.props.label} value={this.props.value} style={StyleSheet.flatten([styles.toggleBox, this.props.iosBoxStyle])}>
       <View style={this.props.iosPickerWrapperStyle}>
         {this.renderPicker()}
       </View>
